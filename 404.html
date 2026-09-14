@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#000000" />
+    <title>Page not found | Redcall</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- One light for the whole page, behind every section. -->
+    <div data-shader-bg class="page-light" aria-hidden="true"></div>
+    <div class="page-light-vignette" aria-hidden="true"></div>
+
+    <header class="glass-header sticky top-0 z-40">
+      <div class="container-page flex items-center justify-between py-6">
+        <a
+          href="/"
+          class="flex items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
+        >
+          <img src="/favicon.svg" alt="Redcall" width="32" height="32" />
+          Redcall
+        </a>
+        <nav aria-label="Primary" class="hidden items-center gap-10 md:flex">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/about.html" class="nav-link">About &amp; contact</a>
+          <a href="/about.html#demo" class="btn-primary">Book a demo</a>
+        </nav>
+        <button
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          class="inline-flex items-center justify-center rounded-lg border border-white/15 p-2 md:hidden"
+        >
+          <span class="sr-only">Open menu</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav
+        id="mobile-nav"
+        data-nav-menu
+        data-open="false"
+        aria-label="Mobile"
+        class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden md:hidden"
+      >
+        <ul class="flex flex-col gap-4">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/about.html" class="nav-link">About &amp; contact</a></li>
+          <li><a href="/about.html#demo" class="btn-primary w-full">Book a demo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="relative overflow-hidden">
+        <div class="relative flex min-h-[520px] w-full items-center py-16 sm:min-h-[70svh]">
+          <div class="container-page">
+            <p
+              class="text-xs font-semibold tracking-[0.18em] text-[var(--color-brand-text)] uppercase"
+            >
+              Error 404
+            </p>
+            <h1 class="mt-5 text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl">
+              That page is not here
+            </h1>
+            <p class="mt-6 max-w-xl text-lg leading-relaxed text-[var(--color-ink-soft)]">
+              The link may be out of date, or the page may have moved. You can head back to the
+              home page, or get in touch and we will point you in the right direction.
+            </p>
+            <div class="mt-10 flex flex-wrap items-center gap-4">
+              <a href="/" class="btn-primary">Back to home</a>
+              <a href="/about.html#demo" class="btn-glass">Book a demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="glass-band">
+      <div class="container-page py-16">
+        <a
+          href="/"
+          class="inline-flex items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
+        >
+          <img src="/favicon.svg" alt="Redcall" width="34" height="34" />
+          Redcall
+        </a>
+        <p class="mt-6 max-w-md text-sm leading-relaxed text-[var(--color-ink-soft)]">
+          On-site emergency alerting and staff coordination for boutique hotels and aged care
+          facilities.
+        </p>
+
+        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3">
+          <li><a href="/about.html" class="footer-link">About &amp; contact</a></li>
+          <li><a href="/about.html#demo" class="footer-link">Book a demo</a></li>
+        </ul>
+
+        <div
+          class="mt-14 flex flex-col gap-4 border-t border-white/10 pt-7 text-xs leading-relaxed text-[var(--color-ink-soft)] md:flex-row md:items-baseline md:justify-between md:gap-12"
+        >
+          <p class="max-w-3xl">
+            Owned and run by <span class="brand-initial">V</span>almere Group Pty Ltd &middot; ABN
+            13 702 167 780 &middot; Unit 1033, 43 Therry Street, Melbourne VIC, Australia &middot;
+            Contact:
+            <a href="mailto:info@redcall.com.au" class="underline hover:text-[var(--color-ink)]"
+              >info@redcall.com.au</a
+            >
+          </p>
+          <p class="shrink-0 md:text-right">&copy; 2026 Valmere Group Pty Ltd. All rights reserved.</p>
+        </div>
+
+        <p class="mt-4 text-xs text-[var(--color-ink-soft)]">
+          This site does not use cookies or tracking technologies.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

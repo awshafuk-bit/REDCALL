@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Legal pages are unreviewed drafts. Keep them out of search results until they are final.
+Disallow: /privacy-policy.html
+Disallow: /terms-and-conditions.html
+Disallow: /cookie-policy.html
+Disallow: /refund-policy.html
+
+Sitemap: https://redcall.com.au/sitemap.xml

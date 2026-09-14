@@ -60,13 +60,14 @@ const fragmentShader = /* glsl */ `
     float edge = smoothstep(beamWidth, beamWidth - 0.42, abs(angle));
 
     float raySlices = noise(vec2(angle * 9.0 + uTime * 0.05, uTime * 0.25)) * 0.5 + 0.5;
-    float falloff = smoothstep(2.5, 0.05, dist);
+    /* Reaches far enough up the viewport to read as one light for the whole page. */
+    float falloff = smoothstep(3.3, 0.05, dist);
 
     float hueShift = (angle / beamWidth) * 0.7 + 0.5 + uTime * 0.05;
     vec3 color = palette(hueShift);
 
-    float core = smoothstep(0.06, 0.0, abs(angle)) * 0.6;
-    float intensity = edge * falloff * (0.5 + raySlices * 0.7) + core * falloff;
+    float core = smoothstep(0.06, 0.0, abs(angle)) * 0.5;
+    float intensity = edge * falloff * (0.42 + raySlices * 0.6) + core * falloff;
 
     float grain = (hash(uv * uResolution.xy * 0.75 + uTime) - 0.5) * 0.03;
 

@@ -8,42 +8,54 @@
       name="description"
       content="Redcall is an on-site emergency alerting and staff-coordination app for boutique hotels and aged care facilities. One tap notifies staff, gives situation guidance, and lets a manager coordinate the response."
     />
+    <link rel="canonical" href="https://redcall.com.au/" />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Redcall" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:url" content="https://redcall.com.au/" />
+    <meta property="og:title" content="Redcall | On-site emergency alerting and staff coordination" />
+    <meta property="og:description" content="One tap alerts everyone on site, gives them guidance for that situation, and gives a manager one screen to coordinate the response." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Redcall | On-site emergency alerting and staff coordination" />
+    <meta name="twitter:description" content="One tap alerts everyone on site, gives them guidance for that situation, and gives a manager one screen to coordinate the response." />
     <title>Redcall | On-site emergency alerting and staff coordination</title>
     <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header class="border-b border-[var(--color-line)]">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-[var(--color-ink)]">
-          <img src="favicon.svg" alt="Redcall" width="28" height="28" />
+    <!-- One light for the whole page, behind every section. -->
+    <div data-shader-bg class="page-light" aria-hidden="true"></div>
+    <div class="page-light-vignette" aria-hidden="true"></div>
+
+    <header class="glass-header sticky top-0 z-40">
+      <div class="container-page flex items-center justify-between py-6">
+        <a
+          href="index.html"
+          class="flex items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
+        >
+          <img src="favicon.svg" alt="Redcall" width="32" height="32" />
           Redcall
         </a>
-        <nav aria-label="Primary" class="hidden items-center gap-8 md:flex">
+        <nav aria-label="Primary" class="hidden items-center gap-10 md:flex">
           <a href="index.html" class="nav-link" aria-current="page">Home</a>
-          <a href="how-it-works.html" class="nav-link">How it works</a>
-          <a href="who-its-for.html" class="nav-link">Who it's for</a>
-          <a href="features.html" class="nav-link">Features</a>
-          <a href="pricing.html" class="nav-link">Pricing</a>
           <a href="about.html" class="nav-link">About &amp; contact</a>
-        </nav>
-        <div class="hidden md:block">
           <a href="about.html#demo" class="btn-primary">Book a demo</a>
-        </div>
+        </nav>
         <button
           type="button"
           data-nav-toggle
           aria-expanded="false"
           aria-controls="mobile-nav"
-          class="inline-flex items-center justify-center rounded-md border border-[var(--color-line)] p-2 md:hidden"
+          class="inline-flex items-center justify-center rounded-lg border border-white/15 p-2 md:hidden"
         >
           <span class="sr-only">Open menu</span>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path
               d="M3 6h18M3 12h18M3 18h18"
               stroke="currentColor"
-              stroke-width="2"
+              stroke-width="1.5"
               stroke-linecap="round"
             />
           </svg>
@@ -54,14 +66,10 @@
         data-nav-menu
         data-open="false"
         aria-label="Mobile"
-        class="border-t border-[var(--color-line)] px-6 py-4 data-[open=false]:hidden md:hidden"
+        class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden md:hidden"
       >
         <ul class="flex flex-col gap-4">
           <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
-          <li><a href="how-it-works.html" class="nav-link">How it works</a></li>
-          <li><a href="who-its-for.html" class="nav-link">Who it's for</a></li>
-          <li><a href="features.html" class="nav-link">Features</a></li>
-          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
           <li><a href="about.html" class="nav-link">About &amp; contact</a></li>
           <li><a href="about.html#demo" class="btn-primary w-full">Book a demo</a></li>
         </ul>
@@ -69,270 +77,164 @@
     </header>
 
     <main id="main">
-      <!-- Hero (the shader wrapper also covers the section below, so the glow bleeds through
-           instead of cutting off hard at a border) -->
+      <!-- Hero -->
       <section class="relative overflow-hidden">
-        <div data-shader-bg class="pointer-events-none absolute inset-0" aria-hidden="true"></div>
-
         <svg
-          class="pointer-events-none absolute inset-0 h-full w-full opacity-[0.15]"
+          class="pointer-events-none absolute inset-0 h-full w-full opacity-[0.13]"
           viewBox="0 0 1200 800"
+          preserveAspectRatio="xMidYMid slice"
           fill="none"
           aria-hidden="true"
         >
-          <circle cx="600" cy="230" r="180" stroke="white" stroke-width="0.75" />
-          <circle cx="600" cy="230" r="240" stroke="white" stroke-width="0.5" />
-          <line x1="600" y1="0" x2="600" y2="90" stroke="white" stroke-width="0.75" />
-          <line x1="600" y1="370" x2="600" y2="460" stroke="white" stroke-width="0.75" />
-          <line x1="330" y1="230" x2="420" y2="230" stroke="white" stroke-width="0.75" />
-          <line x1="780" y1="230" x2="870" y2="230" stroke="white" stroke-width="0.75" />
+          <circle cx="600" cy="400" r="230" stroke="white" stroke-width="0.75" />
+          <circle cx="600" cy="400" r="310" stroke="white" stroke-width="0.5" />
+          <line x1="600" y1="20" x2="600" y2="150" stroke="white" stroke-width="0.75" />
+          <line x1="600" y1="650" x2="600" y2="780" stroke="white" stroke-width="0.75" />
+          <line x1="240" y1="400" x2="350" y2="400" stroke="white" stroke-width="0.75" />
+          <line x1="850" y1="400" x2="960" y2="400" stroke="white" stroke-width="0.75" />
         </svg>
 
-        <div
-          class="pointer-events-none absolute inset-0"
-          style="background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.1) 55%, rgba(0,0,0,0.45) 100%)"
-        ></div>
-
-        <div class="relative z-10 flex min-h-[80vh] items-center">
-          <div class="mx-auto max-w-3xl px-6 py-16 text-center">
-            <div class="animate-fade-up badge-glass mb-8" style="animation-delay: 0ms">
-              <span class="relative flex h-2 w-2">
-                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--color-safe)] opacity-75"></span>
-                <span class="relative inline-flex h-2 w-2 rounded-full bg-[var(--color-safe)]"></span>
-              </span>
-              <span class="text-xs font-medium tracking-wide text-zinc-300">Available for new properties</span>
-            </div>
-
+        <div class="relative flex min-h-[600px] w-full items-center py-16 sm:min-h-[80svh] sm:py-0">
+          <div class="container-page py-16 text-center">
             <h1
-              class="animate-fade-up text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl"
-              style="animation-delay: 120ms"
+              class="mx-auto max-w-4xl text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl md:text-6xl 2xl:max-w-6xl 2xl:text-7xl"
             >
-              When something happens,
-              <span
-                class="inline-block bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent"
-                style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5)"
-                >everyone knows</span
-              >
+              When something happens, everyone knows
             </h1>
-
             <p
-              class="animate-fade-up mx-auto mt-6 max-w-2xl text-lg text-[var(--color-ink-soft)]"
-              style="animation-delay: 240ms"
+              class="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-[var(--color-ink-soft)] 2xl:max-w-3xl 2xl:text-xl"
             >
               One tap alerts everyone on site, gives them guidance for that situation, and gives a
               manager one screen to coordinate the response.
             </p>
-
-            <div class="animate-fade-up mt-10 flex items-center justify-center" style="animation-delay: 360ms">
-              <a href="about.html#demo" class="btn-hero-pill">
-                Book a demo
-                <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path
-                    d="M3.5 8h9M8.5 4l4 4-4 4"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
+            <div class="mt-10 flex items-center justify-center">
+              <a href="about.html#demo" class="btn-primary">Book a demo</a>
             </div>
-          </div>
-        </div>
-
-        <!-- The on-site problem: stays inside the shader wrapper, transparent, so the beam's
-             glow continues fading through it instead of stopping at a hard edge. -->
-        <div class="relative z-10">
-          <div class="mx-auto max-w-4xl px-6 py-20">
-            <h2 class="text-2xl font-bold text-[var(--color-ink)] sm:text-3xl">
-              The problem with relying on shouting down a hallway
-            </h2>
-            <p class="mt-5 text-base leading-relaxed text-[var(--color-ink-soft)]">
-              In a boutique hotel or aged care facility, incidents rarely happen in front of a
-              group. A single staff member on a night shift, a front-desk worker dealing with an
-              aggressive guest, or a support worker alone in a resident's room has no fast way to
-              bring in help or let anyone else know what's happening.
-            </p>
-            <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">
-              Phone calls take time to make and answer. Radios aren't always carried or switched
-              on. By the time other staff find out, the situation has often already moved on
-              without them, and the manager is the last to know.
-            </p>
           </div>
         </div>
       </section>
 
-      <!-- How it works -->
-      <section class="border-t border-[var(--color-line)]">
-        <div class="mx-auto max-w-6xl px-6 py-20">
-          <h2 class="text-2xl font-bold text-[var(--color-ink)] sm:text-3xl">How Redcall works</h2>
-          <div class="mt-10 grid gap-8 md:grid-cols-3">
-            <div class="rounded-lg border border-[var(--color-line)] p-6">
-              <span class="text-sm font-semibold text-[var(--color-brand-text)]">Step 1</span>
-              <h3 class="mt-2 text-lg font-bold text-[var(--color-ink)]">Trigger</h3>
-              <p class="mt-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                A staff member opens the app on their own phone, taps the alert button, and
-                selects what's happening from a short list of situations.
+      <!-- See Redcall on your property -->
+      <section class="glass-band">
+        <div class="container-page py-20">
+          <div class="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-20">
+            <div>
+              <h2 class="text-3xl leading-snug text-[var(--color-ink)] 2xl:text-4xl">
+                See Redcall on your property
+              </h2>
+              <p class="mt-5 max-w-xl text-base leading-relaxed text-[var(--color-ink-soft)]">
+                A demo runs about twenty minutes, on a call, with your own roster and floor plan in
+                front of us. We would rather tell you it is a poor fit than sell you a licence you
+                do not need.
+              </p>
+              <p class="mt-4 max-w-xl text-base leading-relaxed text-[var(--color-ink-soft)]">
+                Bring the questions you already have about night shifts, lone workers, or the parts
+                of your building where phone signal is unreliable.
               </p>
             </div>
-            <div class="rounded-lg border border-[var(--color-line)] p-6">
-              <span class="text-sm font-semibold text-[var(--color-brand-text)]">Step 2</span>
-              <h3 class="mt-2 text-lg font-bold text-[var(--color-ink)]">Everyone responds</h3>
-              <p class="mt-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+
+            <div class="border-t border-white/10 pt-8 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-20">
+              <h3 class="text-sm font-semibold tracking-[0.18em] text-[var(--color-ink-soft)] uppercase">
+                What we walk through
+              </h3>
+              <ul class="mt-6 space-y-4 text-base text-[var(--color-ink-soft)]">
+                <li class="border-b border-white/10 pb-4">
+                  The staff view, on a phone, raising and responding to an alert.
+                </li>
+                <li class="border-b border-white/10 pb-4">
+                  The manager's screen during a live alert, and how an alert is closed.
+                </li>
+                <li>Where Redcall stops, and what stays with your staff and with 000.</li>
+              </ul>
+              <div class="mt-8">
+                <a href="about.html#demo" class="btn-primary">Book a demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How Redcall works: transparent so the page light shows through around the cards. -->
+      <section class="border-t border-white/10">
+        <div class="container-page py-20">
+          <h2 class="text-3xl leading-snug text-[var(--color-ink)] 2xl:text-4xl">
+            How Redcall works
+          </h2>
+          <div class="mt-12 grid gap-8 md:grid-cols-3">
+            <div class="glass-panel p-8">
+              <span
+                class="text-xs font-semibold tracking-[0.18em] text-[var(--color-brand-text)] uppercase"
+                >Step one</span
+              >
+              <h3 class="mt-3 text-xl text-[var(--color-ink)]">Trigger</h3>
+              <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">
+                A staff member opens the app on their own phone, taps the alert button, and selects
+                what is happening from a short list of situations.
+              </p>
+            </div>
+            <div class="glass-panel p-8">
+              <span
+                class="text-xs font-semibold tracking-[0.18em] text-[var(--color-brand-text)] uppercase"
+                >Step two</span
+              >
+              <h3 class="mt-3 text-xl text-[var(--color-ink)]">Everyone responds</h3>
+              <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">
                 On-site staff are notified immediately, see guidance written for that specific
                 situation, and mark themselves safe or not safe.
               </p>
             </div>
-            <div class="rounded-lg border border-[var(--color-line)] p-6">
-              <span class="text-sm font-semibold text-[var(--color-brand-text)]">Step 3</span>
-              <h3 class="mt-2 text-lg font-bold text-[var(--color-ink)]">Manager coordinates</h3>
-              <p class="mt-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                A manager sees who has responded, follows up directly with anyone who hasn't, and
+            <div class="glass-panel p-8">
+              <span
+                class="text-xs font-semibold tracking-[0.18em] text-[var(--color-brand-text)] uppercase"
+                >Step three</span
+              >
+              <h3 class="mt-3 text-xl text-[var(--color-ink)]">Manager coordinates</h3>
+              <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">
+                A manager sees who has responded, follows up directly with anyone who has not, and
                 closes the alert once the situation is resolved.
               </p>
             </div>
-          </div>
-          <div class="mt-8">
-            <a href="how-it-works.html" class="footer-link font-semibold">See the full flow by role &rarr;</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Feature grid -->
-      <section class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
-        <div class="mx-auto max-w-6xl px-6 py-20">
-          <h2 class="text-2xl font-bold text-[var(--color-ink)] sm:text-3xl">
-            Built around the shift, not the demo
-          </h2>
-          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-            <div class="rounded-lg bg-[var(--color-surface)] p-5">
-              <h3 class="text-sm font-bold text-[var(--color-ink)]">Alerting</h3>
-              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                One-tap alerts from a staff member's own phone, with guidance for the situation
-                sent out immediately.
-              </p>
-            </div>
-            <div class="rounded-lg bg-[var(--color-surface)] p-5">
-              <h3 class="text-sm font-bold text-[var(--color-ink)]">Coordination</h3>
-              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                A live response view shows who has marked safe, who hasn't responded yet, and who
-                is on site.
-              </p>
-            </div>
-            <div class="rounded-lg bg-[var(--color-surface)] p-5">
-              <h3 class="text-sm font-bold text-[var(--color-ink)]">Management</h3>
-              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                A manager runs the alert from start to finish and closes it once everyone is
-                accounted for.
-              </p>
-            </div>
-            <div class="rounded-lg bg-[var(--color-surface)] p-5">
-              <h3 class="text-sm font-bold text-[var(--color-ink)]">Reliability</h3>
-              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                Designed to keep working across a real shift, with the honest limits of any
-                phone-based system explained upfront.
-              </p>
-            </div>
-            <div class="rounded-lg bg-[var(--color-surface)] p-5">
-              <h3 class="text-sm font-bold text-[var(--color-ink)]">Languages</h3>
-              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-                Staff can use Redcall in their own language, so guidance is clear under pressure.
-              </p>
-            </div>
-          </div>
-          <div class="mt-8">
-            <a href="features.html" class="footer-link font-semibold">See all features &rarr;</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Trust boundary -->
-      <section class="border-t border-[var(--color-line)]">
-        <div class="mx-auto max-w-4xl px-6 py-20">
-          <h2 class="text-2xl font-bold text-[var(--color-ink)] sm:text-3xl">
-            What Redcall is, and isn't
-          </h2>
-          <p class="mt-5 text-base leading-relaxed text-[var(--color-ink-soft)]">
-            Redcall is an awareness and coordination tool. It helps staff notice an incident
-            faster, follow guidance written for that situation, and confirm who is safe.
-          </p>
-          <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">
-            It is not a personal panic button, and it is not a tactical responder. Emergency
-            response stays with your staff and with emergency services at all times. In a
-            life-threatening emergency, call 000 first. Redcall does not guarantee anyone's
-            safety, and it is designed to support your existing procedures, not replace them.
-          </p>
-        </div>
-      </section>
-
-      <!-- Final CTA -->
-      <section class="border-t border-[var(--color-line)] bg-[var(--color-surface)]">
-        <div class="mx-auto max-w-4xl px-6 py-16 text-center">
-          <h2 class="text-2xl font-bold text-white sm:text-3xl">See Redcall on your property</h2>
-          <p class="mt-4 text-base text-zinc-300">
-            Book a short demo and we'll walk through how it fits your team's shifts and layout.
-          </p>
-          <div class="mt-8">
-            <a href="about.html#demo" class="btn-primary">Book a demo</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
-      <div class="mx-auto max-w-6xl px-6 py-12">
-        <div class="grid gap-10 md:grid-cols-4">
-          <div>
-            <a href="index.html" class="flex items-center gap-2 text-base font-bold text-[var(--color-ink)]">
-              <img src="favicon.svg" alt="Redcall" width="24" height="24" />
-              Redcall
-            </a>
-            <p class="mt-3 text-sm text-[var(--color-ink-soft)]">
-              On-site emergency alerting and staff coordination for boutique hotels and aged care
-              facilities.
-            </p>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Product</h2>
-            <ul class="mt-3 space-y-2">
-              <li><a href="how-it-works.html" class="footer-link">How it works</a></li>
-              <li><a href="who-its-for.html" class="footer-link">Who it's for</a></li>
-              <li><a href="features.html" class="footer-link">Features</a></li>
-              <li><a href="pricing.html" class="footer-link">Pricing</a></li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Company</h2>
-            <ul class="mt-3 space-y-2">
-              <li><a href="about.html" class="footer-link">About &amp; contact</a></li>
-              <li><a href="about.html#demo" class="footer-link">Book a demo</a></li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Legal</h2>
-            <ul class="mt-3 space-y-2">
-              <li><a href="privacy-policy.html" class="footer-link">Privacy policy</a></li>
-              <li><a href="terms-and-conditions.html" class="footer-link">Terms &amp; conditions</a></li>
-              <li><a href="cookie-policy.html" class="footer-link">Cookie policy</a></li>
-              <li><a href="refund-policy.html" class="footer-link">Refund policy</a></li>
-            </ul>
-          </div>
+    <footer class="glass-band">
+      <div class="container-page py-16">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
+        >
+          <img src="favicon.svg" alt="Redcall" width="34" height="34" />
+          Redcall
+        </a>
+        <p class="mt-6 max-w-md text-sm leading-relaxed text-[var(--color-ink-soft)]">
+          On-site emergency alerting and staff coordination for boutique hotels and aged care
+          facilities.
+        </p>
+
+        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3">
+          <li><a href="about.html" class="footer-link">About &amp; contact</a></li>
+          <li><a href="about.html#demo" class="footer-link">Book a demo</a></li>
+        </ul>
+
+        <div
+          class="mt-14 flex flex-col gap-4 border-t border-white/10 pt-7 text-xs leading-relaxed text-[var(--color-ink-soft)] md:flex-row md:items-baseline md:justify-between md:gap-12"
+        >
+          <p class="max-w-3xl">
+            Owned and run by <span class="brand-initial">V</span>almere Group Pty Ltd &middot; ABN
+            13 702 167 780 &middot; Unit 1033, 43 Therry Street, Melbourne VIC, Australia &middot;
+            Contact:
+            <a href="mailto:info@redcall.com.au" class="underline hover:text-[var(--color-ink)]"
+              >info@redcall.com.au</a
+            >
+          </p>
+          <p class="shrink-0 md:text-right">&copy; 2026 Valmere Group Pty Ltd. All rights reserved.</p>
         </div>
-        <div class="mt-10 border-t border-[var(--color-line)] pt-6 text-xs leading-relaxed text-[var(--color-ink-soft)]">
-          <p>
-            This site does not use cookies or tracking technologies. See our
-            <a href="cookie-policy.html" class="underline">cookie policy</a>.
-          </p>
-          <p class="mt-2">
-            [Legal entity name] Pty Ltd &middot; ABN [00 000 000 000] &middot;
-            [Registered business address, Australia] &middot; Contact: [contact email placeholder]
-          </p>
-          <p class="mt-2">
-            In a life-threatening emergency, call 000. Redcall is a coordination tool, not an
-            emergency service, and does not guarantee anyone's safety.
-          </p>
-          <p class="mt-2">&copy; 2026 [Legal entity name] Pty Ltd. All rights reserved.</p>
-        </div>
+
+        <p class="mt-4 text-xs text-[var(--color-ink-soft)]">
+          This site does not use cookies or tracking technologies.
+        </p>
       </div>
     </footer>
 

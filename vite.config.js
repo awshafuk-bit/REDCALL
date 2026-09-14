@@ -5,17 +5,16 @@ import tailwindcss from '@tailwindcss/vite'
 const root = __dirname
 
 export default defineConfig({
-  base: './',
+  // Served from the root of redcall.com.au, so root-absolute asset paths are correct and
+  // keep 404.html styled even when it is served for a deep URL.
+  base: '/',
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
       input: {
         main: resolve(root, 'index.html'),
-        howItWorks: resolve(root, 'how-it-works.html'),
-        whoItsFor: resolve(root, 'who-its-for.html'),
-        features: resolve(root, 'features.html'),
-        pricing: resolve(root, 'pricing.html'),
         about: resolve(root, 'about.html'),
+        notFound: resolve(root, '404.html'),
         privacy: resolve(root, 'privacy-policy.html'),
         terms: resolve(root, 'terms-and-conditions.html'),
         cookies: resolve(root, 'cookie-policy.html'),

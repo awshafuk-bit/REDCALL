@@ -5,49 +5,58 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Redcall privacy policy: what data this website collects, why, and how it is handled." />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Privacy Policy | Redcall</title>
     <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header class="border-b border-[var(--color-line)]">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-[var(--color-ink)]">
-          <img src="favicon.svg" alt="Redcall" width="28" height="28" />
+    <!-- One light for the whole page, behind every section. -->
+    <div data-shader-bg class="page-light" aria-hidden="true"></div>
+    <div class="page-light-vignette" aria-hidden="true"></div>
+
+    <header class="glass-header sticky top-0 z-40">
+      <div class="container-page flex items-center justify-between py-6">
+        <a
+          href="index.html"
+          class="flex items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
+        >
+          <img src="favicon.svg" alt="Redcall" width="32" height="32" />
           Redcall
         </a>
-        <nav aria-label="Primary" class="hidden items-center gap-8 md:flex">
+        <nav aria-label="Primary" class="hidden items-center gap-10 md:flex">
           <a href="index.html" class="nav-link">Home</a>
-          <a href="how-it-works.html" class="nav-link">How it works</a>
-          <a href="who-its-for.html" class="nav-link">Who it's for</a>
-          <a href="features.html" class="nav-link">Features</a>
-          <a href="pricing.html" class="nav-link">Pricing</a>
           <a href="about.html" class="nav-link">About &amp; contact</a>
-        </nav>
-        <div class="hidden md:block">
           <a href="about.html#demo" class="btn-primary">Book a demo</a>
-        </div>
+        </nav>
         <button
           type="button"
           data-nav-toggle
           aria-expanded="false"
           aria-controls="mobile-nav"
-          class="inline-flex items-center justify-center rounded-md border border-[var(--color-line)] p-2 md:hidden"
+          class="inline-flex items-center justify-center rounded-lg border border-white/15 p-2 md:hidden"
         >
           <span class="sr-only">Open menu</span>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
           </svg>
         </button>
       </div>
-      <nav id="mobile-nav" data-nav-menu data-open="false" aria-label="Mobile" class="border-t border-[var(--color-line)] px-6 py-4 data-[open=false]:hidden md:hidden">
+      <nav
+        id="mobile-nav"
+        data-nav-menu
+        data-open="false"
+        aria-label="Mobile"
+        class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden md:hidden"
+      >
         <ul class="flex flex-col gap-4">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="how-it-works.html" class="nav-link">How it works</a></li>
-          <li><a href="who-its-for.html" class="nav-link">Who it's for</a></li>
-          <li><a href="features.html" class="nav-link">Features</a></li>
-          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
           <li><a href="about.html" class="nav-link">About &amp; contact</a></li>
           <li><a href="about.html#demo" class="btn-primary w-full">Book a demo</a></li>
         </ul>
@@ -55,7 +64,8 @@
     </header>
 
     <main id="main">
-      <section class="mx-auto max-w-3xl px-6 py-16">
+      <section class="container-page py-16">
+        <div class="max-w-4xl">
         <div class="rounded-lg border border-[var(--color-notice-border)] bg-[var(--color-notice-bg)] p-5 text-sm leading-relaxed text-[var(--color-notice-text)]">
           <p class="font-semibold">Draft policy, pending legal review</p>
           <p class="mt-1">
@@ -74,8 +84,8 @@
           <div>
             <h2 class="text-xl font-bold text-[var(--color-ink)]">Who this policy covers</h2>
             <p class="mt-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-              This policy applies to this marketing website, operated by [Legal entity name] Pty
-              Ltd (ABN [00 000 000 000]). It does not cover the Redcall app itself. Data that
+              This policy applies to this marketing website, operated by Valmere Group Pty Ltd Pty
+              Ltd (ABN 13 702 167 780). It does not cover the Redcall app itself. Data that
               staff and managers enter into the Redcall app while using it at work is collected by
               the property that employs them, under a separate agreement between [Legal entity
               name] Pty Ltd and that property.
@@ -143,68 +153,51 @@
           <div>
             <h2 class="text-xl font-bold text-[var(--color-ink)]">Contact us</h2>
             <p class="mt-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-              For any privacy question, contact [contact email placeholder] or write to [registered
+              For any privacy question, contact info@redcall.com.au or write to [registered
               business address placeholder].
             </p>
           </div>
         </div>
+        </div>
       </section>
     </main>
 
-    <footer class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
-      <div class="mx-auto max-w-6xl px-6 py-12">
-        <div class="grid gap-10 md:grid-cols-4">
-          <div>
-            <a href="index.html" class="flex items-center gap-2 text-base font-bold text-[var(--color-ink)]">
-              <img src="favicon.svg" alt="Redcall" width="24" height="24" />
-              Redcall
-            </a>
-            <p class="mt-3 text-sm text-[var(--color-ink-soft)]">
-              On-site emergency alerting and staff coordination for boutique hotels and aged care
-              facilities.
-            </p>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Product</h2>
-            <ul class="mt-3 space-y-2">
-              <li><a href="how-it-works.html" class="footer-link">How it works</a></li>
-              <li><a href="who-its-for.html" class="footer-link">Who it's for</a></li>
-              <li><a href="features.html" class="footer-link">Features</a></li>
-              <li><a href="pricing.html" class="footer-link">Pricing</a></li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Company</h2>
-            <ul class="mt-3 space-y-2">
-              <li><a href="about.html" class="footer-link">About &amp; contact</a></li>
-              <li><a href="about.html#demo" class="footer-link">Book a demo</a></li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Legal</h2>
-            <ul class="mt-3 space-y-2">
-              <li><a href="privacy-policy.html" class="footer-link">Privacy policy</a></li>
-              <li><a href="terms-and-conditions.html" class="footer-link">Terms &amp; conditions</a></li>
-              <li><a href="cookie-policy.html" class="footer-link">Cookie policy</a></li>
-              <li><a href="refund-policy.html" class="footer-link">Refund policy</a></li>
-            </ul>
-          </div>
+    <footer class="glass-band">
+      <div class="container-page py-16">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
+        >
+          <img src="favicon.svg" alt="Redcall" width="34" height="34" />
+          Redcall
+        </a>
+        <p class="mt-6 max-w-md text-sm leading-relaxed text-[var(--color-ink-soft)]">
+          On-site emergency alerting and staff coordination for boutique hotels and aged care
+          facilities.
+        </p>
+
+        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3">
+          <li><a href="about.html" class="footer-link">About &amp; contact</a></li>
+          <li><a href="about.html#demo" class="footer-link">Book a demo</a></li>
+        </ul>
+
+        <div
+          class="mt-14 flex flex-col gap-4 border-t border-white/10 pt-7 text-xs leading-relaxed text-[var(--color-ink-soft)] md:flex-row md:items-baseline md:justify-between md:gap-12"
+        >
+          <p class="max-w-3xl">
+            Owned and run by <span class="brand-initial">V</span>almere Group Pty Ltd &middot; ABN
+            13 702 167 780 &middot; Unit 1033, 43 Therry Street, Melbourne VIC, Australia &middot;
+            Contact:
+            <a href="mailto:info@redcall.com.au" class="underline hover:text-[var(--color-ink)]"
+              >info@redcall.com.au</a
+            >
+          </p>
+          <p class="shrink-0 md:text-right">&copy; 2026 Valmere Group Pty Ltd. All rights reserved.</p>
         </div>
-        <div class="mt-10 border-t border-[var(--color-line)] pt-6 text-xs leading-relaxed text-[var(--color-ink-soft)]">
-          <p>
-            This site does not use cookies or tracking technologies. See our
-            <a href="cookie-policy.html" class="underline">cookie policy</a>.
-          </p>
-          <p class="mt-2">
-            [Legal entity name] Pty Ltd &middot; ABN [00 000 000 000] &middot;
-            [Registered business address, Australia] &middot; Contact: [contact email placeholder]
-          </p>
-          <p class="mt-2">
-            In a life-threatening emergency, call 000. Redcall is a coordination tool, not an
-            emergency service, and does not guarantee anyone's safety.
-          </p>
-          <p class="mt-2">&copy; 2026 [Legal entity name] Pty Ltd. All rights reserved.</p>
-        </div>
+
+        <p class="mt-4 text-xs text-[var(--color-ink-soft)]">
+          This site does not use cookies or tracking technologies.
+        </p>
       </div>
     </footer>
 
