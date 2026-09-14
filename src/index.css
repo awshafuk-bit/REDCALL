@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  --color-ink: #ffffff;
+  --color-ink-soft: #a1a1aa;
+  --color-paper: #000000;
+  --color-paper-tint: #0a0a0a;
+  --color-surface: #141414;
+  --color-line: #2a2a2a;
+  --color-brand: #9f1d1d;
+  --color-brand-dark: #7d1616;
+  --color-brand-text: #f87171;
+  --color-safe: #4ade80;
+  --color-notice-bg: #fffbeb;
+  --color-notice-border: #d69e2e;
+  --color-notice-text: #78350f;
+}
+
+html {
+  scroll-behavior: auto;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Visible, high-contrast focus ring for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--color-brand-text);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  color: #000000;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-[var(--color-brand)] px-6 py-3 text-sm font-semibold text-white transition-colors duration-150 hover:bg-[var(--color-brand-dark)];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-[var(--color-ink)] bg-transparent px-6 py-3 text-sm font-semibold text-[var(--color-ink)] transition-colors duration-150 hover:bg-[var(--color-ink)] hover:text-black;
+  }
+  .nav-link {
+    @apply text-sm font-medium text-[var(--color-ink-soft)] hover:text-[var(--color-ink)];
+  }
+  .nav-link[aria-current='page'] {
+    @apply text-[var(--color-ink)] underline underline-offset-4;
+  }
+  .footer-link {
+    @apply text-sm text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline;
+  }
+  .field-label {
+    @apply mb-1 block text-sm font-semibold text-[var(--color-ink)];
+  }
+  .field-hint {
+    @apply mb-2 text-xs text-[var(--color-ink-soft)];
+  }
+  .field-input {
+    @apply w-full rounded-md border border-[var(--color-line)] bg-[var(--color-surface)] px-3.5 py-2.5 text-sm text-[var(--color-ink)] placeholder:text-[var(--color-ink-soft)];
+  }
+
+  /* Scoped to the home hero only: the rest of the site keeps non-pill buttons. */
+  .btn-hero-pill {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 ease-out hover:scale-105 hover:border-white/40 hover:bg-white hover:text-black hover:shadow-[0_0_40px_rgba(255,255,255,0.35)];
+  }
+
+  .badge-glass {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-md;
+  }
+}

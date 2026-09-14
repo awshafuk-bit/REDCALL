@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Redcall is built for boutique hotels, aged care facilities, and small venues where staff work night shifts, alone, or spread across a property."
+    />
+    <title>Who it's for | Redcall</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="border-b border-[var(--color-line)]">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-[var(--color-ink)]">
+          <img src="favicon.svg" alt="Redcall" width="28" height="28" />
+          Redcall
+        </a>
+        <nav aria-label="Primary" class="hidden items-center gap-8 md:flex">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="how-it-works.html" class="nav-link">How it works</a>
+          <a href="who-its-for.html" class="nav-link" aria-current="page">Who it's for</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="about.html" class="nav-link">About &amp; contact</a>
+        </nav>
+        <div class="hidden md:block">
+          <a href="about.html#demo" class="btn-primary">Book a demo</a>
+        </div>
+        <button
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          class="inline-flex items-center justify-center rounded-md border border-[var(--color-line)] p-2 md:hidden"
+        >
+          <span class="sr-only">Open menu</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav
+        id="mobile-nav"
+        data-nav-menu
+        data-open="false"
+        aria-label="Mobile"
+        class="border-t border-[var(--color-line)] px-6 py-4 data-[open=false]:hidden md:hidden"
+      >
+        <ul class="flex flex-col gap-4">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How it works</a></li>
+          <li><a href="who-its-for.html" class="nav-link" aria-current="page">Who it's for</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About &amp; contact</a></li>
+          <li><a href="about.html#demo" class="btn-primary w-full">Book a demo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="relative overflow-hidden">
+        <div data-shader-bg class="pointer-events-none absolute inset-0" aria-hidden="true"></div>
+        <svg
+          class="pointer-events-none absolute inset-0 h-full w-full opacity-[0.15]"
+          viewBox="0 0 1200 800"
+          fill="none"
+          aria-hidden="true"
+        >
+          <circle cx="600" cy="230" r="180" stroke="white" stroke-width="0.75" />
+          <circle cx="600" cy="230" r="240" stroke="white" stroke-width="0.5" />
+          <line x1="600" y1="0" x2="600" y2="90" stroke="white" stroke-width="0.75" />
+          <line x1="330" y1="230" x2="420" y2="230" stroke="white" stroke-width="0.75" />
+          <line x1="780" y1="230" x2="870" y2="230" stroke="white" stroke-width="0.75" />
+        </svg>
+        <div
+          class="pointer-events-none absolute inset-0"
+          style="background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.12) 60%, rgba(0,0,0,0.5) 100%)"
+        ></div>
+
+        <div class="relative z-10 mx-auto max-w-4xl px-6 py-16 sm:py-20">
+          <h1
+            class="animate-fade-up text-4xl font-extrabold tracking-tight text-white sm:text-5xl"
+            style="animation-delay: 0ms"
+          >
+            Built for teams
+            <span
+              class="inline-block bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent"
+              style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5)"
+              >working alone or spread thin</span
+            >
+          </h1>
+          <p class="animate-fade-up mt-6 text-lg text-[var(--color-ink-soft)]" style="animation-delay: 120ms">
+            Redcall is designed for properties where staff numbers are small relative to the space
+            they cover, and where a single person is often the only one aware something has gone
+            wrong.
+          </p>
+        </div>
+
+        <!-- Boutique hotels: stays inside the shader wrapper so the beam bleeds through. -->
+        <div class="relative z-10">
+          <div class="mx-auto max-w-4xl px-6 py-16">
+            <h2 class="text-2xl font-bold text-[var(--color-ink)] sm:text-3xl">Boutique hotels</h2>
+            <div class="mt-8 grid gap-6 sm:grid-cols-3">
+              <div>
+                <h3 class="font-bold text-[var(--color-ink)]">Night shifts</h3>
+                <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                  A single night auditor or receptionist is often the only staff member on site,
+                  with no one nearby to call on if something happens.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-bold text-[var(--color-ink)]">Front-desk incidents</h3>
+                <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                  An intoxicated or aggressive guest, or a medical event in the lobby, needs other
+                  staff aware fast, wherever they are on the property.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-bold text-[var(--color-ink)]">Staff spread across floors</h3>
+                <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                  Housekeeping and maintenance staff working alone in rooms or back-of-house areas
+                  have no easy way to reach the desk quickly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Aged care -->
+      <section class="border-t border-[var(--color-line)]">
+        <div class="mx-auto max-w-4xl px-6 py-16">
+          <h2 class="text-2xl font-bold text-[var(--color-ink)] sm:text-3xl">Aged care facilities</h2>
+          <div class="mt-8 grid gap-6 sm:grid-cols-3">
+            <div>
+              <h3 class="font-bold text-[var(--color-ink)]">Lone workers</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Support workers are frequently alone with a resident, particularly overnight, with
+                colleagues on other wings or floors.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold text-[var(--color-ink)]">Medical incidents</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Falls and sudden health events need the rest of the on-duty team aware
+                immediately, not after someone finds a phone and dials around.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold text-[var(--color-ink)]">Facility-wide awareness</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Incidents involving a resident, such as a wandering event, benefit from every
+                on-shift staff member knowing at once, not just the closest one.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Small venues -->
+      <section class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
+        <div class="mx-auto max-w-4xl px-6 py-16">
+          <h2 class="text-2xl font-bold text-[var(--color-ink)] sm:text-3xl">Small venues</h2>
+          <div class="mt-8 grid gap-6 sm:grid-cols-3">
+            <div>
+              <h3 class="font-bold text-[var(--color-ink)]">Small teams, large spaces</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                A handful of staff covering a bar, function room, or event space can't always see
+                or hear each other across the venue.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold text-[var(--color-ink)]">Front-of-house incidents</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Conflicts between patrons or a medical event on the floor need security and
+                management aware straight away.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-bold text-[var(--color-ink)]">Closing alone</h3>
+              <p class="mt-2 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                The last staff member closing up is often working without anyone else on the
+                property to notice if something's wrong.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-[var(--color-line)] bg-[var(--color-surface)]">
+        <div class="mx-auto max-w-4xl px-6 py-16 text-center">
+          <h2 class="text-2xl font-bold text-white sm:text-3xl">Tell us about your property</h2>
+          <p class="mt-4 text-base text-zinc-300">
+            Book a demo and we'll talk through your shifts, layout, and current process.
+          </p>
+          <div class="mt-8">
+            <a href="about.html#demo" class="btn-primary">Book a demo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
+      <div class="mx-auto max-w-6xl px-6 py-12">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div>
+            <a href="index.html" class="flex items-center gap-2 text-base font-bold text-[var(--color-ink)]">
+              <img src="favicon.svg" alt="Redcall" width="24" height="24" />
+              Redcall
+            </a>
+            <p class="mt-3 text-sm text-[var(--color-ink-soft)]">
+              On-site emergency alerting and staff coordination for boutique hotels and aged care
+              facilities.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Product</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="how-it-works.html" class="footer-link">How it works</a></li>
+              <li><a href="who-its-for.html" class="footer-link">Who it's for</a></li>
+              <li><a href="features.html" class="footer-link">Features</a></li>
+              <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Company</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="about.html" class="footer-link">About &amp; contact</a></li>
+              <li><a href="about.html#demo" class="footer-link">Book a demo</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Legal</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="privacy-policy.html" class="footer-link">Privacy policy</a></li>
+              <li><a href="terms-and-conditions.html" class="footer-link">Terms &amp; conditions</a></li>
+              <li><a href="cookie-policy.html" class="footer-link">Cookie policy</a></li>
+              <li><a href="refund-policy.html" class="footer-link">Refund policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-10 border-t border-[var(--color-line)] pt-6 text-xs leading-relaxed text-[var(--color-ink-soft)]">
+          <p>
+            This site does not use cookies or tracking technologies. See our
+            <a href="cookie-policy.html" class="underline">cookie policy</a>.
+          </p>
+          <p class="mt-2">
+            [Legal entity name] Pty Ltd &middot; ABN [00 000 000 000] &middot;
+            [Registered business address, Australia] &middot; Contact: [contact email placeholder]
+          </p>
+          <p class="mt-2">
+            In a life-threatening emergency, call 000. Redcall is a coordination tool, not an
+            emergency service, and does not guarantee anyone's safety.
+          </p>
+          <p class="mt-2">&copy; 2026 [Legal entity name] Pty Ltd. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

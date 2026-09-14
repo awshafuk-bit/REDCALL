@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Redcall shield icon">
+  <path d="M16 2 27 6.5V15c0 8.2-5 13.6-11 15C10 28.6 5 23.2 5 15V6.5Z" fill="#9F1D1D"/>
+  <path d="M16 9v8.5" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="16" cy="21.5" r="1.5" fill="#ffffff"/>
+</svg>

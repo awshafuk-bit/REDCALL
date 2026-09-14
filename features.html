@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Redcall features grouped by alerting, coordination, management, reliability, and languages, plus an honest look at what phone-based software can't fix."
+    />
+    <title>Features | Redcall</title>
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="border-b border-[var(--color-line)]">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-[var(--color-ink)]">
+          <img src="favicon.svg" alt="Redcall" width="28" height="28" />
+          Redcall
+        </a>
+        <nav aria-label="Primary" class="hidden items-center gap-8 md:flex">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="how-it-works.html" class="nav-link">How it works</a>
+          <a href="who-its-for.html" class="nav-link">Who it's for</a>
+          <a href="features.html" class="nav-link" aria-current="page">Features</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="about.html" class="nav-link">About &amp; contact</a>
+        </nav>
+        <div class="hidden md:block">
+          <a href="about.html#demo" class="btn-primary">Book a demo</a>
+        </div>
+        <button
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          class="inline-flex items-center justify-center rounded-md border border-[var(--color-line)] p-2 md:hidden"
+        >
+          <span class="sr-only">Open menu</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav
+        id="mobile-nav"
+        data-nav-menu
+        data-open="false"
+        aria-label="Mobile"
+        class="border-t border-[var(--color-line)] px-6 py-4 data-[open=false]:hidden md:hidden"
+      >
+        <ul class="flex flex-col gap-4">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="how-it-works.html" class="nav-link">How it works</a></li>
+          <li><a href="who-its-for.html" class="nav-link">Who it's for</a></li>
+          <li><a href="features.html" class="nav-link" aria-current="page">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About &amp; contact</a></li>
+          <li><a href="about.html#demo" class="btn-primary w-full">Book a demo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="relative overflow-hidden">
+        <div data-shader-bg class="pointer-events-none absolute inset-0" aria-hidden="true"></div>
+        <svg
+          class="pointer-events-none absolute inset-0 h-full w-full opacity-[0.15]"
+          viewBox="0 0 1200 800"
+          fill="none"
+          aria-hidden="true"
+        >
+          <circle cx="600" cy="230" r="180" stroke="white" stroke-width="0.75" />
+          <circle cx="600" cy="230" r="240" stroke="white" stroke-width="0.5" />
+          <line x1="600" y1="0" x2="600" y2="90" stroke="white" stroke-width="0.75" />
+          <line x1="330" y1="230" x2="420" y2="230" stroke="white" stroke-width="0.75" />
+          <line x1="780" y1="230" x2="870" y2="230" stroke="white" stroke-width="0.75" />
+        </svg>
+        <div
+          class="pointer-events-none absolute inset-0"
+          style="background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.12) 60%, rgba(0,0,0,0.5) 100%)"
+        ></div>
+
+        <div class="relative z-10 mx-auto max-w-4xl px-6 py-16 sm:py-20">
+          <h1
+            class="animate-fade-up text-4xl font-extrabold tracking-tight text-white sm:text-5xl"
+            style="animation-delay: 0ms"
+          >
+            What Redcall does
+            <span
+              class="inline-block bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent"
+              style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5)"
+              >today</span
+            >
+          </h1>
+          <p class="animate-fade-up mt-6 text-lg text-[var(--color-ink-soft)]" style="animation-delay: 120ms">
+            Every feature below is live in the app now. Where software has a real limit, we say so
+            further down this page.
+          </p>
+        </div>
+
+        <!-- Alerting: stays inside the shader wrapper so the beam bleeds through. -->
+        <div class="relative z-10">
+          <div class="mx-auto max-w-4xl px-6 py-14">
+            <h2 class="text-xl font-bold text-[var(--color-ink)]">Alerting</h2>
+            <ul class="mt-6 space-y-4">
+              <li class="flex gap-3">
+                <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+                <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                  A staff member raises an alert from their own phone in one tap, with no extra
+                  hardware to carry or charge.
+                </p>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+                <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                  Each alert is tagged with a situation type, such as medical, security, fire, or
+                  other, and carries guidance written for that situation.
+                </p>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+                <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                  Every staff member signed in for that shift is notified at the same time.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
+        <div class="mx-auto max-w-4xl px-6 py-14">
+          <h2 class="text-xl font-bold text-[var(--color-ink)]">Coordination</h2>
+          <ul class="mt-6 space-y-4">
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                A live response view shows who has marked safe, who has marked not safe, and who
+                hasn't responded.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Staff can attach a short note when they respond, so the manager sees more than a
+                status.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Staff can change their status at any point while the alert stays active.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="border-t border-[var(--color-line)]">
+        <div class="mx-auto max-w-4xl px-6 py-14">
+          <h2 class="text-xl font-bold text-[var(--color-ink)]">Management</h2>
+          <ul class="mt-6 space-y-4">
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                A manager runs the whole alert from a single screen, from the moment it's raised
+                to closing it out.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                The response view makes it clear who still needs following up, so the manager
+                knows who to contact directly.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                A summary of each alert, including response times and status, is kept on record
+                for reporting after the event.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Drill mode runs a practice alert that's clearly marked as a drill, for training
+                and preparedness exercises.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
+        <div class="mx-auto max-w-4xl px-6 py-14">
+          <h2 class="text-xl font-bold text-[var(--color-ink)]">Reliability</h2>
+          <ul class="mt-6 space-y-4">
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Alerts send over wifi or mobile data, whichever the phone has available at the
+                time.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Notifications arrive as a standard phone notification, including when the phone is
+                locked, provided notifications are enabled for the app.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Software is software-only. No pagers, badges, or extra hardware to buy, issue, or
+                replace.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="border-t border-[var(--color-line)]">
+        <div class="mx-auto max-w-4xl px-6 py-14">
+          <h2 class="text-xl font-bold text-[var(--color-ink)]">Languages</h2>
+          <ul class="mt-6 space-y-4">
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                Each staff member sets the language their own guidance and interface appear in.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-brand)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                This is set per person, not per property, so a mixed-language team each reads
+                instructions in the language they understand fastest.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Honest limits -->
+      <section class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
+        <div class="mx-auto max-w-4xl px-6 py-16">
+          <h2 class="text-2xl font-bold text-[var(--color-ink)] sm:text-3xl">
+            What software can't fix
+          </h2>
+          <p class="mt-5 text-base leading-relaxed text-[var(--color-ink-soft)]">
+            Redcall runs on phones, and phones have limits. Being upfront about them is part of
+            using the app safely.
+          </p>
+          <ul class="mt-6 space-y-4">
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-ink)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                <span class="font-semibold text-[var(--color-ink)]">Dead zones.</span> If a phone
+                has no signal and no wifi, it can't send or receive an alert. Redcall can't work
+                around a dead spot in a building.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-ink)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                <span class="font-semibold text-[var(--color-ink)]">A phone that isn't on the
+                person.</span> If a phone is in a locker, charging in another room, or left at a
+                desk, the person carrying it won't see the alert.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-ink)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                <span class="font-semibold text-[var(--color-ink)]">Silent or do not disturb.</span>
+                Notifications follow the phone's own sound settings. If sound is off, Redcall
+                can't override it.
+              </p>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-ink)]"></span>
+              <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
+                <span class="font-semibold text-[var(--color-ink)]">A phone that's off or
+                flat.</span> No power means no notification, the same as any app.
+              </p>
+            </li>
+          </ul>
+          <p class="mt-6 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+            These are limits of any phone-based system, not something unique to Redcall. Agree
+            with your team on where phones are carried during a shift, and treat Redcall as one
+            part of your emergency plan, not the whole plan.
+          </p>
+        </div>
+      </section>
+
+      <section class="border-t border-[var(--color-line)] bg-[var(--color-surface)]">
+        <div class="mx-auto max-w-4xl px-6 py-16 text-center">
+          <h2 class="text-2xl font-bold text-white sm:text-3xl">Ask us anything about the setup</h2>
+          <p class="mt-4 text-base text-zinc-300">
+            Book a demo and bring your questions about your specific building or roster.
+          </p>
+          <div class="mt-8">
+            <a href="about.html#demo" class="btn-primary">Book a demo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-[var(--color-line)] bg-[var(--color-paper-tint)]">
+      <div class="mx-auto max-w-6xl px-6 py-12">
+        <div class="grid gap-10 md:grid-cols-4">
+          <div>
+            <a href="index.html" class="flex items-center gap-2 text-base font-bold text-[var(--color-ink)]">
+              <img src="favicon.svg" alt="Redcall" width="24" height="24" />
+              Redcall
+            </a>
+            <p class="mt-3 text-sm text-[var(--color-ink-soft)]">
+              On-site emergency alerting and staff coordination for boutique hotels and aged care
+              facilities.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Product</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="how-it-works.html" class="footer-link">How it works</a></li>
+              <li><a href="who-its-for.html" class="footer-link">Who it's for</a></li>
+              <li><a href="features.html" class="footer-link">Features</a></li>
+              <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Company</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="about.html" class="footer-link">About &amp; contact</a></li>
+              <li><a href="about.html#demo" class="footer-link">Book a demo</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-sm font-semibold text-[var(--color-ink)]">Legal</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="privacy-policy.html" class="footer-link">Privacy policy</a></li>
+              <li><a href="terms-and-conditions.html" class="footer-link">Terms &amp; conditions</a></li>
+              <li><a href="cookie-policy.html" class="footer-link">Cookie policy</a></li>
+              <li><a href="refund-policy.html" class="footer-link">Refund policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-10 border-t border-[var(--color-line)] pt-6 text-xs leading-relaxed text-[var(--color-ink-soft)]">
+          <p>
+            This site does not use cookies or tracking technologies. See our
+            <a href="cookie-policy.html" class="underline">cookie policy</a>.
+          </p>
+          <p class="mt-2">
+            [Legal entity name] Pty Ltd &middot; ABN [00 000 000 000] &middot;
+            [Registered business address, Australia] &middot; Contact: [contact email placeholder]
+          </p>
+          <p class="mt-2">
+            In a life-threatening emergency, call 000. Redcall is a coordination tool, not an
+            emergency service, and does not guarantee anyone's safety.
+          </p>
+          <p class="mt-2">&copy; 2026 [Legal entity name] Pty Ltd. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
