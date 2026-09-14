@@ -26,6 +26,9 @@ html {
   scroll-behavior: auto;
   color-scheme: dark;
   background: var(--color-paper);
+  /* Stops iOS inflating text when the phone is rotated to landscape. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -167,8 +170,10 @@ summary:focus-visible {
   .field-hint {
     @apply mb-2 text-xs text-[var(--color-ink-soft)];
   }
+  /* text-base (16px) is deliberate: iOS Safari zooms the whole page in when a focused
+     field is under 16px. Keeping it at 16px stops that without disabling pinch-zoom. */
   .field-input {
-    @apply w-full rounded-lg px-4 py-3 text-sm text-[var(--color-ink)] transition-colors duration-200 placeholder:text-[var(--color-ink-soft)];
+    @apply w-full rounded-lg px-4 py-3 text-base text-[var(--color-ink)] transition-colors duration-200 placeholder:text-[var(--color-ink-soft)];
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(12px);
