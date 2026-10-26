@@ -14,8 +14,10 @@ export default defineConfig({
       input: {
         main: resolve(root, 'index.html'),
         about: resolve(root, 'about.html'),
+        privacy: resolve(root, 'privacy.html'),
+        support: resolve(root, 'support.html'),
         notFound: resolve(root, '404.html'),
-        privacy: resolve(root, 'privacy-policy.html'),
+        privacyPolicyOld: resolve(root, 'privacy-policy.html'),
         terms: resolve(root, 'terms-and-conditions.html'),
         cookies: resolve(root, 'cookie-policy.html'),
         refund: resolve(root, 'refund-policy.html'),
