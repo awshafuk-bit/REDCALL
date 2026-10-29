@@ -16,6 +16,7 @@ export default defineConfig({
         about: resolve(root, 'about.html'),
         privacy: resolve(root, 'privacy.html'),
         support: resolve(root, 'support.html'),
+        termsPage: resolve(root, 'terms.html'),
         notFound: resolve(root, '404.html'),
         privacyPolicyOld: resolve(root, 'privacy-policy.html'),
         terms: resolve(root, 'terms-and-conditions.html'),
