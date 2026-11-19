@@ -152,6 +152,9 @@ summary:focus-visible {
   .nav-link[aria-current='page'] {
     @apply text-[var(--color-ink)];
   }
+  .social-link {
+    @apply inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/15 text-[var(--color-ink-soft)] transition-colors duration-200 hover:border-white/30 hover:text-[var(--color-ink)];
+  }
   .footer-link {
     @apply text-sm text-[var(--color-ink-soft)] hover:text-[var(--color-ink)] hover:underline;
   }
