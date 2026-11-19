@@ -4,21 +4,70 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="RedCall alerts your whole hotel team the moment an incident starts, shows staff what to do, and gives management one place to coordinate the response."
-    />
+    <meta name="description" content="RedCall is an Australian workplace emergency alert and incident coordination platform. Alert staff, monitor safety responses and coordinate emergencies." />
     <link rel="canonical" href="https://redcall.com.au/" />
     <meta name="theme-color" content="#000000" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="RedCall" />
     <meta property="og:locale" content="en_AU" />
     <meta property="og:url" content="https://redcall.com.au/" />
-    <meta property="og:title" content="RedCall | One alert. One team. One coordinated response." />
-    <meta property="og:description" content="RedCall alerts your whole hotel team the moment an incident starts, shows staff what to do, and gives management one place to coordinate the response." />
+    <meta property="og:title" content="RedCall | Workplace Emergency Alerts &amp; Incident Coordination" />
+    <meta property="og:description" content="RedCall is an Australian workplace emergency alert and incident coordination platform. Alert staff, monitor safety responses and coordinate emergencies." />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="RedCall | One alert. One team. One coordinated response." />
-    <meta name="twitter:description" content="RedCall alerts your whole hotel team the moment an incident starts, shows staff what to do, and gives management one place to coordinate the response." />
+    <meta name="twitter:title" content="RedCall | Workplace Emergency Alerts &amp; Incident Coordination" />
+    <meta name="twitter:description" content="RedCall is an Australian workplace emergency alert and incident coordination platform. Alert staff, monitor safety responses and coordinate emergencies." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://redcall.com.au/#valmere",
+            "name": "Valmere Group Pty Ltd",
+            "legalName": "Valmere Group Pty Ltd",
+            "identifier": {
+              "@type": "PropertyValue",
+              "propertyID": "ABN",
+              "value": "13 702 167 780"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1033, 43 Therry Street",
+              "addressLocality": "Melbourne",
+              "addressRegion": "VIC",
+              "addressCountry": "AU"
+            },
+            "email": "info@redcall.com.au",
+            "brand": { "@id": "https://redcall.com.au/#organization" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://redcall.com.au/#organization",
+            "name": "RedCall",
+            "url": "https://redcall.com.au/",
+            "logo": "https://redcall.com.au/favicon.svg",
+            "description": "RedCall is an Australian workplace emergency alert and incident coordination platform.",
+            "slogan": "One alert. One team. One coordinated response.",
+            "parentOrganization": { "@id": "https://redcall.com.au/#valmere" },
+            "areaServed": { "@type": "Country", "name": "Australia" },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "email": "info@redcall.com.au",
+              "availableLanguage": "English"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://redcall.com.au/#website",
+            "url": "https://redcall.com.au/",
+            "name": "RedCall",
+            "inLanguage": "en-AU",
+            "publisher": { "@id": "https://redcall.com.au/#organization" }
+          }
+        ]
+      }
+    </script>
     <title>RedCall | Workplace Emergency Alerts &amp; Incident Coordination</title>
     <link rel="stylesheet" href="/src/index.css" />
   </head>
@@ -97,15 +146,20 @@
         <div class="relative flex min-h-[600px] w-full items-center py-16 sm:min-h-[80svh] sm:py-0">
           <div class="container-page py-16 text-center">
             <h1
-              class="mx-auto max-w-4xl text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl md:text-6xl 2xl:max-w-6xl 2xl:text-7xl"
+              class="mx-auto max-w-4xl text-3xl leading-tight text-[var(--color-ink)] sm:text-5xl 2xl:max-w-6xl 2xl:text-6xl"
             >
-              <span class="md:block">One Alert. One Team.</span>
-              <span class="md:block">One Coordinated Response.</span>
+              Workplace Emergency Alerts &amp; Incident Coordination
             </h1>
             <p
-              class="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-[var(--color-ink-soft)] 2xl:max-w-3xl 2xl:text-xl"
+              class="mx-auto mt-6 max-w-3xl text-xl leading-snug text-[var(--color-ink)] sm:text-2xl 2xl:max-w-4xl 2xl:text-3xl"
             >
-              Built for the moments a hotel can't afford confusion.
+              <span class="md:block">One alert. One team.</span>
+              <span class="md:block">One coordinated response.</span>
+            </p>
+            <p
+              class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[var(--color-ink-soft)] 2xl:max-w-3xl 2xl:text-xl"
+            >
+              Built for the moments a workplace can't afford confusion.
             </p>
             <div class="mt-10 flex items-center justify-center">
               <a href="about.html#demo" class="btn-primary">Book a demo</a>
@@ -114,13 +168,13 @@
         </div>
       </section>
 
-      <!-- See RedCall in your hotel -->
+      <!-- See RedCall in your workplace -->
       <section class="glass-band">
         <div class="container-page py-20">
           <div class="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-20">
             <div>
               <h2 class="text-3xl leading-snug text-[var(--color-ink)] 2xl:text-4xl">
-                See RedCall in your hotel
+                See RedCall in your workplace
               </h2>
               <p class="mt-6 max-w-xl text-base leading-relaxed text-[var(--color-ink-soft)]">
                 You already know what an incident looks like at your property when things aren't
@@ -135,7 +189,7 @@
               </p>
               <p class="mt-4 max-w-xl text-base leading-relaxed text-[var(--color-ink-soft)]">
                 We'll also look at your property specifically: the layout, the shift patterns, and
-                the places where messages get lost or people get missed. Every hotel has them. Most
+                the places where messages get lost or people get missed. Every workplace has them. Most
                 managers already know where theirs are.
               </p>
               <p class="mt-4 max-w-xl text-base leading-relaxed text-[var(--color-ink-soft)]">
