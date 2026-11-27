@@ -30,17 +30,20 @@
           <img src="/favicon.svg" alt="RedCall" width="32" height="32" />
           RedCall
         </a>
-        <nav aria-label="Primary" class="hidden items-center gap-10 md:flex">
+        <nav aria-label="Primary" class="hidden items-center gap-6 lg:flex xl:gap-10">
           <a href="/" class="nav-link">Home</a>
-          <a href="/about.html" class="nav-link">About Us</a>
-          <a href="/about.html#demo" class="btn-primary">Book a demo</a>
+          <a href="/how-it-works" class="nav-link">How It Works</a>
+          <a href="/about" class="nav-link">About Us</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/security" class="nav-link">Security</a>
+          <a href="/about#demo" class="btn-primary">Book a demo</a>
         </nav>
         <button
           type="button"
           data-nav-toggle
           aria-expanded="false"
           aria-controls="mobile-nav"
-          class="inline-flex items-center justify-center rounded-lg border border-white/15 p-3 md:hidden"
+          class="inline-flex items-center justify-center rounded-lg border border-white/15 p-3 lg:hidden"
         >
           <span class="sr-only">Open menu</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -58,12 +61,15 @@
         data-nav-menu
         data-open="false"
         aria-label="Mobile"
-        class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden md:hidden"
+        class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden lg:hidden"
       >
         <ul class="flex flex-col gap-4">
           <li><a href="/" class="nav-link block py-1.5">Home</a></li>
-          <li><a href="/about.html" class="nav-link block py-1.5">About Us</a></li>
-          <li><a href="/about.html#demo" class="btn-primary w-full">Book a demo</a></li>
+          <li><a href="/how-it-works" class="nav-link block py-1.5">How It Works</a></li>
+          <li><a href="/about" class="nav-link block py-1.5">About Us</a></li>
+          <li><a href="/faq" class="nav-link block py-1.5">FAQ</a></li>
+          <li><a href="/security" class="nav-link block py-1.5">Security</a></li>
+          <li><a href="/about#demo" class="btn-primary w-full">Book a demo</a></li>
         </ul>
       </nav>
     </header>
@@ -86,7 +92,7 @@
             </p>
             <div class="mt-10 flex flex-wrap items-center gap-4">
               <a href="/" class="btn-primary">Back to home</a>
-              <a href="/about.html#demo" class="btn-glass">Book a demo</a>
+              <a href="/about#demo" class="btn-glass">Book a demo</a>
             </div>
           </div>
         </div>
@@ -104,6 +110,9 @@
         </a>
 
         <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3">
+          <li><a href="/how-it-works" class="footer-link">How It Works</a></li>
+          <li><a href="/faq" class="footer-link">FAQ</a></li>
+          <li><a href="/security" class="footer-link">Security</a></li>
           <li><a href="/privacy.html" class="footer-link">Privacy</a></li>
           <li><a href="/support.html" class="footer-link">Support</a></li>
           <li><a href="/terms.html" class="footer-link">Terms</a></li>

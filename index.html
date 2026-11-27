@@ -27,53 +27,46 @@
         "@graph": [
           {
             "@type": "Organization",
-            "@id": "https://redcall.com.au/#valmere",
-            "name": "Valmere Group Pty Ltd",
+            "@id": "https://redcall.com.au/#organization",
+            "name": "RedCall",
+            "alternateName": "RedCall by Valmere Group",
             "legalName": "Valmere Group Pty Ltd",
-            "identifier": {
-              "@type": "PropertyValue",
-              "propertyID": "ABN",
-              "value": "13 702 167 780"
-            },
+            "url": "https://redcall.com.au/",
+            "logo": "https://redcall.com.au/icon-512.png",
+            "description": "RedCall is incident response software for workplaces in Australia.",
+            "email": "info@redcall.com.au",
+            "taxID": "13 702 167 780",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "1033, 43 Therry Street",
               "addressLocality": "Melbourne",
               "addressRegion": "VIC",
               "addressCountry": "AU"
             },
-            "email": "info@redcall.com.au",
-            "brand": { "@id": "https://redcall.com.au/#organization" }
-          },
-          {
-            "@type": "Organization",
-            "@id": "https://redcall.com.au/#organization",
-            "name": "RedCall",
-            "url": "https://redcall.com.au/",
-            "logo": "https://redcall.com.au/icon-512.png",
-            "description": "RedCall is an Australian workplace emergency alert and response coordination software brand operated by Valmere Group Pty Ltd.",
-            "slogan": "Workplace Emergency Alerts & Response Coordination",
+            "areaServed": "AU",
             "sameAs": [
               "https://www.linkedin.com/company/redcallau/",
               "https://x.com/RedCallANZ"
-            ],
-            "parentOrganization": { "@id": "https://redcall.com.au/#valmere" },
-            "areaServed": { "@type": "Country", "name": "Australia" },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "customer support",
-              "email": "info@redcall.com.au",
-              "availableLanguage": "English"
-            }
+            ]
           },
           {
             "@type": "WebSite",
             "@id": "https://redcall.com.au/#website",
             "url": "https://redcall.com.au/",
             "name": "RedCall",
-            "inLanguage": "en-AU",
-            "description": "RedCall helps workplaces alert staff during emergencies, track who is safe or needs assistance, and coordinate responses in real time.",
-            "publisher": { "@id": "https://redcall.com.au/#organization" }
+            "publisher": {
+              "@id": "https://redcall.com.au/#organization"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "RedCall",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "iOS, Android",
+            "description": "Incident response software that turns one alert into a coordinated team response.",
+            "url": "https://redcall.com.au/",
+            "publisher": {
+              "@id": "https://redcall.com.au/#organization"
+            }
           }
         ]
       }
@@ -91,23 +84,26 @@
     <header class="glass-header sticky top-0 z-40">
       <div class="container-page flex items-center justify-between py-6">
         <a
-          href="index.html"
+          href="/"
           class="flex items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
         >
           <img src="favicon.svg" alt="RedCall" width="32" height="32" />
           RedCall
         </a>
-        <nav aria-label="Primary" class="hidden items-center gap-10 md:flex">
-          <a href="index.html" class="nav-link" aria-current="page">Home</a>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="about.html#demo" class="btn-primary">Book a demo</a>
+        <nav aria-label="Primary" class="hidden items-center gap-6 lg:flex xl:gap-10">
+          <a href="/" class="nav-link" aria-current="page">Home</a>
+          <a href="/how-it-works" class="nav-link">How It Works</a>
+          <a href="/about" class="nav-link">About Us</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/security" class="nav-link">Security</a>
+          <a href="/about#demo" class="btn-primary">Book a demo</a>
         </nav>
         <button
           type="button"
           data-nav-toggle
           aria-expanded="false"
           aria-controls="mobile-nav"
-          class="inline-flex items-center justify-center rounded-lg border border-white/15 p-3 md:hidden"
+          class="inline-flex items-center justify-center rounded-lg border border-white/15 p-3 lg:hidden"
         >
           <span class="sr-only">Open menu</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -125,12 +121,15 @@
         data-nav-menu
         data-open="false"
         aria-label="Mobile"
-        class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden md:hidden"
+        class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden lg:hidden"
       >
         <ul class="flex flex-col gap-4">
-          <li><a href="index.html" class="nav-link block py-1.5" aria-current="page">Home</a></li>
-          <li><a href="about.html" class="nav-link block py-1.5">About Us</a></li>
-          <li><a href="about.html#demo" class="btn-primary w-full">Book a demo</a></li>
+          <li><a href="/" class="nav-link block py-1.5" aria-current="page">Home</a></li>
+          <li><a href="/how-it-works" class="nav-link block py-1.5">How It Works</a></li>
+          <li><a href="/about" class="nav-link block py-1.5">About Us</a></li>
+          <li><a href="/faq" class="nav-link block py-1.5">FAQ</a></li>
+          <li><a href="/security" class="nav-link block py-1.5">Security</a></li>
+          <li><a href="/about#demo" class="btn-primary w-full">Book a demo</a></li>
         </ul>
       </nav>
     </header>
@@ -171,7 +170,7 @@
               Built for the moments a workplace can't afford confusion.
             </p>
             <div class="mt-10 flex items-center justify-center">
-              <a href="about.html#demo" class="btn-primary">Book a demo</a>
+              <a href="/about#demo" class="btn-primary">Book a demo</a>
             </div>
           </div>
         </div>
@@ -225,7 +224,7 @@
                 <li>How incidents are recorded automatically</li>
               </ul>
               <div class="mt-8">
-                <a href="about.html#demo" class="btn-primary">Book a demo</a>
+                <a href="/about#demo" class="btn-primary">Book a demo</a>
               </div>
             </div>
           </div>
@@ -274,7 +273,7 @@
     <footer class="glass-band">
       <div class="container-page py-16">
         <a
-          href="index.html"
+          href="/"
           class="inline-flex items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
         >
           <img src="favicon.svg" alt="RedCall" width="34" height="34" />
@@ -282,6 +281,9 @@
         </a>
 
         <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3">
+          <li><a href="/how-it-works" class="footer-link">How It Works</a></li>
+          <li><a href="/faq" class="footer-link">FAQ</a></li>
+          <li><a href="/security" class="footer-link">Security</a></li>
           <li><a href="privacy.html" class="footer-link">Privacy</a></li>
           <li><a href="support.html" class="footer-link">Support</a></li>
           <li><a href="terms.html" class="footer-link">Terms</a></li>
