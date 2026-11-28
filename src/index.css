@@ -115,6 +115,10 @@ summary:focus-visible {
   .page-light {
     @apply pointer-events-none fixed inset-0;
     z-index: -10;
+    background:
+      radial-gradient(ellipse 70% 75% at 50% 105%, rgba(196, 52, 47, 0.34), transparent 70%),
+      radial-gradient(ellipse 120% 90% at 50% 100%, rgba(125, 22, 22, 0.28), transparent 72%),
+      #000000;
   }
 
   .page-light-vignette {
@@ -184,5 +188,17 @@ summary:focus-visible {
   }
   .field-input:hover {
     border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Honour the system "reduce motion" setting for any remaining transitions. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
