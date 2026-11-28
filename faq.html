@@ -24,7 +24,6 @@
       property="og:description"
       content="Plain answers about RedCall: what it is, who it is for, how an alert works, what happens to incident data and who makes it."
     />
-    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="RedCall FAQ" />
     <meta
       name="twitter:description"
@@ -56,7 +55,7 @@
             "name": "How does an alert work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "When someone raises an alert, it goes to the whole team at once. Each person can reply to say whether they are safe or not safe, and managers can see who has and hasn't responded. How loudly a phone sounds depends on settings such as where the person is and the type of alert. In an emergency, call 000 first. RedCall does not contact the emergency services."
+              "text": "When someone raises an alert, everyone on the team receives it at once, and people recorded as on site get the loud one. Each person can reply to say whether they are safe or not safe, and managers can see who has and hasn't responded. How loudly a phone sounds depends on settings such as where the person is and the type of alert. In an emergency, call 000 first. RedCall does not contact the emergency services."
             }
           },
           {
@@ -64,7 +63,7 @@
             "name": "What happens to incident data?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "RedCall records each incident, including who raised and ended the alert, each person's reply, the times and any alert chat messages. The records are kept for as long as the workplace uses RedCall. After a workplace closes its account, they are deleted or de-identified within 12 months unless the law requires them to be kept longer. Each workplace should keep its own copies of its incident reports. The Privacy Policy explains where data is held and who can see it."
+              "text": "RedCall records each incident, including who raised and ended the alert, each person's reply, the times and any alert chat messages. The records are kept for as long as the workplace uses RedCall. After a workplace closes its account, they are deleted or de-identified within 12 months unless the law requires them to be kept longer. A PDF report is emailed to the one report address the workplace gave at setup, about 3 minutes after an alert ends, after (i) a real incident that ended (all clear or expired), (ii) a drill, marked as a drill, and (iii) an alert cancelled with the workplace's cancel code. An alert cancelled as accidental by the person who raised it within 2 minutes does not produce a report. Each workplace should keep its own copies of its incident reports. The Privacy Policy explains where data is held and who can see it."
             }
           },
           {
@@ -78,6 +77,12 @@
         ]
       }
     </script>
+    <meta property="og:image" content="https://redcall.com.au/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RedCall: Workplace Emergency Alerts &amp; Response Coordination" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://redcall.com.au/og-image.png" />
     <title>RedCall FAQ</title>
     <link rel="stylesheet" href="/src/index.css" />
   </head>
@@ -85,16 +90,16 @@
     <a href="#main" class="skip-link">Skip to main content</a>
 
     <!-- One light for the whole page, behind every section. -->
-    <div data-shader-bg class="page-light" aria-hidden="true"></div>
+    <div class="page-light" aria-hidden="true"></div>
     <div class="page-light-vignette" aria-hidden="true"></div>
 
     <header class="glass-header sticky top-0 z-40">
       <div class="container-page flex items-center justify-between py-6">
         <a
           href="/"
-          class="flex items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
+          class="flex min-h-11 items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
         >
-          <img src="favicon.svg" alt="RedCall" width="32" height="32" />
+          <img src="favicon.svg" alt="" width="32" height="32" />
           RedCall
         </a>
         <nav aria-label="Primary" class="hidden items-center gap-6 lg:flex xl:gap-10">
@@ -130,7 +135,7 @@
         aria-label="Mobile"
         class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden lg:hidden"
       >
-        <ul class="flex flex-col gap-4">
+        <ul class="flex flex-col gap-2">
           <li><a href="/" class="nav-link block py-1.5">Home</a></li>
           <li><a href="/how-it-works" class="nav-link block py-1.5">How It Works</a></li>
           <li><a href="/about" class="nav-link block py-1.5">About Us</a></li>
@@ -151,9 +156,9 @@
           <h2 class="mt-12 text-2xl leading-snug text-[var(--color-ink)]">Who is it for?</h2>
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">RedCall is for hotels first, followed by aged care, schools, warehouses and other workplaces.</p>
           <h2 class="mt-12 text-2xl leading-snug text-[var(--color-ink)]">How does an alert work?</h2>
-          <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">When someone raises an alert, it goes to the whole team at once. Each person can reply to say whether they are safe or not safe, and managers can see who has and hasn't responded. How loudly a phone sounds depends on settings such as where the person is and the type of alert. In an emergency, call 000 first. RedCall does not contact the emergency services.</p>
+          <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">When someone raises an alert, everyone on the team receives it at once, and people recorded as on site get the loud one. Each person can reply to say whether they are safe or not safe, and managers can see who has and hasn't responded. How loudly a phone sounds depends on settings such as where the person is and the type of alert. In an emergency, call 000 first. RedCall does not contact the emergency services.</p>
           <h2 class="mt-12 text-2xl leading-snug text-[var(--color-ink)]">What happens to incident data?</h2>
-          <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">RedCall records each incident, including who raised and ended the alert, each person's reply, the times and any alert chat messages. The records are kept for as long as the workplace uses RedCall. After a workplace closes its account, they are deleted or de-identified within 12 months unless the law requires them to be kept longer. Each workplace should keep its own copies of its incident reports. The <a href="/privacy" class="underline hover:text-[var(--color-ink)]">Privacy Policy</a> explains where data is held and who can see it.</p>
+          <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">RedCall records each incident, including who raised and ended the alert, each person's reply, the times and any alert chat messages. The records are kept for as long as the workplace uses RedCall. After a workplace closes its account, they are deleted or de-identified within 12 months unless the law requires them to be kept longer. A PDF report is emailed to the one report address the workplace gave at setup, about 3 minutes after an alert ends, after (i) a real incident that ended (all clear or expired), (ii) a drill, marked as a drill, and (iii) an alert cancelled with the workplace's cancel code. An alert cancelled as accidental by the person who raised it within 2 minutes does not produce a report. Each workplace should keep its own copies of its incident reports. The <a href="/privacy" class="underline hover:text-[var(--color-ink)]">Privacy Policy</a> explains where data is held and who can see it.</p>
           <h2 class="mt-12 text-2xl leading-snug text-[var(--color-ink)]">Is RedCall related to other apps called RedCall?</h2>
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">No. RedCall by Valmere Group Pty Ltd is not affiliated with any other product named RedCall.</p>
           <div class="mt-12"><a href="/about#demo" class="btn-primary">Book a demo</a></div>
@@ -165,19 +170,19 @@
       <div class="container-page py-16">
         <a
           href="/"
-          class="inline-flex items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
+          class="inline-flex min-h-11 items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
         >
-          <img src="favicon.svg" alt="RedCall" width="34" height="34" />
+          <img src="favicon.svg" alt="" width="34" height="34" />
           RedCall
         </a>
 
-        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3">
+        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3 max-lg:gap-y-0">
           <li><a href="/how-it-works" class="footer-link">How It Works</a></li>
           <li><a href="/faq" class="footer-link">FAQ</a></li>
           <li><a href="/security" class="footer-link">Security</a></li>
-          <li><a href="privacy.html" class="footer-link">Privacy</a></li>
-          <li><a href="support.html" class="footer-link">Support</a></li>
-          <li><a href="terms.html" class="footer-link">Terms</a></li>
+          <li><a href="/privacy" class="footer-link">Privacy</a></li>
+          <li><a href="/support" class="footer-link">Support</a></li>
+          <li><a href="/terms" class="footer-link">Terms</a></li>
         </ul>
 
         <div

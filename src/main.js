@@ -9,13 +9,6 @@ if (navToggle && nav) {
   })
 }
 
-const shaderBackgroundEls = document.querySelectorAll('[data-shader-bg]')
-if (shaderBackgroundEls.length > 0) {
-  import('./shader-background.js').then(({ mountShaderBackground }) => {
-    shaderBackgroundEls.forEach((el) => mountShaderBackground(el))
-  })
-}
-
 /* Demo form: post in the background and confirm in place, so the visitor stays on the page.
    Without JS the form still submits normally to the same endpoint. */
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/

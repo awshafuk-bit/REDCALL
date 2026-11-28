@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Help with signing in, alerts, location, deleting your account and reporting a problem with RedCall."
+      content="Help with RedCall: signing in, alerts, location, deleting your account and reporting a problem, plus how to contact us by email."
     />
     <link rel="canonical" href="https://redcall.com.au/support" />
     <meta name="theme-color" content="#000000" />
@@ -22,14 +22,19 @@
     <meta property="og:title" content="Support | RedCall" />
     <meta
       property="og:description"
-      content="Help with signing in, alerts, location, deleting your account and reporting a problem with RedCall."
+      content="Help with RedCall: signing in, alerts, location, deleting your account and reporting a problem, plus how to contact us by email."
     />
-    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Support | RedCall" />
     <meta
       name="twitter:description"
-      content="Help with signing in, alerts, location, deleting your account and reporting a problem with RedCall."
+      content="Help with RedCall: signing in, alerts, location, deleting your account and reporting a problem, plus how to contact us by email."
     />
+    <meta property="og:image" content="https://redcall.com.au/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RedCall: Workplace Emergency Alerts &amp; Response Coordination" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://redcall.com.au/og-image.png" />
     <title>Support | RedCall</title>
     <link rel="stylesheet" href="/src/index.css" />
   </head>
@@ -37,16 +42,16 @@
     <a href="#main" class="skip-link">Skip to main content</a>
 
     <!-- One light for the whole page, behind every section. -->
-    <div data-shader-bg class="page-light" aria-hidden="true"></div>
+    <div class="page-light" aria-hidden="true"></div>
     <div class="page-light-vignette" aria-hidden="true"></div>
 
     <header class="glass-header sticky top-0 z-40">
       <div class="container-page flex items-center justify-between py-6">
         <a
           href="/"
-          class="flex items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
+          class="flex min-h-11 items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
         >
-          <img src="favicon.svg" alt="RedCall" width="32" height="32" />
+          <img src="favicon.svg" alt="" width="32" height="32" />
           RedCall
         </a>
         <nav aria-label="Primary" class="hidden items-center gap-6 lg:flex xl:gap-10">
@@ -82,7 +87,7 @@
         aria-label="Mobile"
         class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden lg:hidden"
       >
-        <ul class="flex flex-col gap-4">
+        <ul class="flex flex-col gap-2">
           <li><a href="/" class="nav-link block py-1.5">Home</a></li>
           <li><a href="/how-it-works" class="nav-link block py-1.5">How It Works</a></li>
           <li><a href="/about" class="nav-link block py-1.5">About Us</a></li>
@@ -97,7 +102,7 @@
       <section class="container-page py-20 sm:py-24">
         <div class="glass-panel mx-auto max-w-5xl p-8 sm:p-12 lg:p-16">
           <h1 class="text-4xl leading-tight text-[var(--color-ink)] sm:text-5xl">RedCall Support</h1>
-          <p class="mt-4 text-sm text-[var(--color-ink-soft)]">Last updated 29 October 2026</p>
+          <p class="mt-4 text-sm text-[var(--color-ink-soft)]">Last updated 29 November 2026</p>
           <p class="mt-8 text-base leading-relaxed text-[var(--color-ink-soft)]">Email: <a href="mailto:info@redcall.com.au" class="underline hover:text-[var(--color-ink)]">info@redcall.com.au</a><br />We aim to reply within 2 business days.</p>
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">In an emergency, call 000 first. RedCall helps your team find out and respond. It does not contact the emergency services and it does not replace them.</p>
           <h2 class="mt-12 text-2xl leading-snug text-[var(--color-ink)]">Pilot status</h2>
@@ -106,7 +111,7 @@
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">RedCall is built for genuine workplace emergencies. These are the rules the app follows.</p>
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">A loud alert sounds on the phones of people who are at the workplace, and on the phones of people the workplace has placed on its always loud list. Everyone else in the team still receives the alert as a notification and can open it and reply.</p>
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">For silent threat types RedCall plays no alarm for anyone, so that RedCall itself does not reveal where a person is hiding. The team is also sent a text message so that the alert reaches them by a second route. Our text sender is waiting for approval from our provider, and until it is approved text messages may not be sent. A text message is delivered by your mobile network and may make the sound your phone uses for messages, so ask your workplace how phones should be set during a silent threat.</p>
-          <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">Practice drills are labelled as a test and never sound. When a drill ends, the workplace is also emailed a report marked as a drill, for its records.</p>
+          <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">Practice drills are labelled as a test and never sound. A PDF report is emailed to the one report address the workplace gave at setup, about 3 minutes after an alert ends, after (i) a real incident that ended (all clear or expired), (ii) a drill, marked as a drill, and (iii) an alert cancelled with the workplace's cancel code. An alert cancelled as accidental by the person who raised it within 2 minutes does not produce a report.</p>
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">Messages written in the alert chat are sent to the rest of the team as ordinary notifications. A broadcast from an Admin arrives as a notification marked BROADCAST, with the name of the workplace.</p>
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">Only one alert can be active for a workplace at a time. An alert raised by mistake can be cancelled from the alert screen within 2 minutes. After that, use your workplace's cancel code or ask an Admin.</p>
           <p class="mt-4 text-base leading-relaxed text-[var(--color-ink-soft)]">Accounts are created only by a workplace. There is no public sign up.</p>
@@ -123,7 +128,7 @@
           <h3 class="mt-8 text-xl leading-snug text-[var(--color-ink)]">Why did my phone not make a loud sound?</h3>
           <p class="mt-3 text-base leading-relaxed text-[var(--color-ink-soft)]">A loud alert sounds for people who are at the workplace and for people on the workplace's always loud list. If you were away, you received the alert quietly. Your silent switch, Focus and Do Not Disturb settings also affect sound, and while you are on a phone call your iPhone may play a shorter sound or none. Silent threat types and practice drills never sound.</p>
           <h3 class="mt-8 text-xl leading-snug text-[var(--color-ink)]">Why does RedCall ask for my location?</h3>
-          <p class="mt-3 text-base leading-relaxed text-[var(--color-ink-soft)]">So that a loud alert sounds for the people who are actually at the workplace, and does not wake people who are off duty. Your phone only checks whether you are inside or outside. We do not store where you are. Admins at your workplace can see whether you are recorded as on site, off site or unknown, but they cannot see your coordinates or a map. Your result is cleared when you sign out and is treated as unknown after 24 hours. Choose "Always" if you want the check to run when the app is closed. iPhone decides when to report the change, so it can be delayed, and RedCall also checks each time you open it. If you decline, you will still receive every alert, quietly, unless your workplace has placed you on its always loud list.</p>
+          <p class="mt-3 text-base leading-relaxed text-[var(--color-ink-soft)]">So that a loud alert sounds for the people who are actually at the workplace, and does not wake people who are off duty. Your phone only checks whether you are inside or outside. We do not store where you are. Admins at your workplace can see whether you are recorded as on site, off site or unknown, but they cannot see your coordinates or a map. Your result is cleared when you sign out and is treated as unknown after 24 hours. Choose "Always" if you want the check to run when the app is closed. iPhone decides when to report the change, so it can be delayed, and RedCall also checks each time you open it. If you decline, alerts are still sent to you, quietly, unless your workplace has placed you on its always loud list.</p>
           <h3 class="mt-8 text-xl leading-snug text-[var(--color-ink)]">How do I change my language?</h3>
           <p class="mt-3 text-base leading-relaxed text-[var(--color-ink-soft)]">Open Profile, then Language.</p>
           <h3 class="mt-8 text-xl leading-snug text-[var(--color-ink)]">How do I delete my account?</h3>
@@ -142,19 +147,19 @@
       <div class="container-page py-16">
         <a
           href="/"
-          class="inline-flex items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
+          class="inline-flex min-h-11 items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
         >
-          <img src="favicon.svg" alt="RedCall" width="34" height="34" />
+          <img src="favicon.svg" alt="" width="34" height="34" />
           RedCall
         </a>
 
-        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3">
+        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3 max-lg:gap-y-0">
           <li><a href="/how-it-works" class="footer-link">How It Works</a></li>
           <li><a href="/faq" class="footer-link">FAQ</a></li>
           <li><a href="/security" class="footer-link">Security</a></li>
-          <li><a href="privacy.html" class="footer-link">Privacy</a></li>
-          <li><a href="support.html" class="footer-link">Support</a></li>
-          <li><a href="terms.html" class="footer-link">Terms</a></li>
+          <li><a href="/privacy" class="footer-link">Privacy</a></li>
+          <li><a href="/support" class="footer-link">Support</a></li>
+          <li><a href="/terms" class="footer-link">Terms</a></li>
         </ul>
 
         <div

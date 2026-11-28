@@ -115,6 +115,10 @@ summary:focus-visible {
   .page-light {
     @apply pointer-events-none fixed inset-0;
     z-index: -10;
+    background:
+      radial-gradient(ellipse 70% 75% at 50% 105%, rgba(196, 52, 47, 0.34), transparent 70%),
+      radial-gradient(ellipse 120% 90% at 50% 100%, rgba(125, 22, 22, 0.28), transparent 72%),
+      #000000;
   }
 
   .page-light-vignette {
@@ -171,18 +175,51 @@ summary:focus-visible {
     @apply mb-1 block text-sm font-semibold text-[var(--color-ink)];
   }
   .field-hint {
-    @apply mb-2 text-xs text-[var(--color-ink-soft)];
+    @apply mb-2 text-sm text-[var(--color-ink-soft)];
   }
   /* text-base (16px) is deliberate: iOS Safari zooms the whole page in when a focused
      field is under 16px. Keeping it at 16px stops that without disabling pinch-zoom. */
   .field-input {
     @apply w-full rounded-lg px-4 py-3 text-base text-[var(--color-ink)] transition-colors duration-200 placeholder:text-[var(--color-ink-soft)];
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
   .field-input:hover {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.65);
+  }
+  .field-input:focus {
+    border-color: var(--color-brand-text);
+  }
+
+  /* Below the desktop breakpoint, give links a tap target of at least 44px. */
+  @media (max-width: 1023px) {
+    .footer-link {
+      display: inline-flex;
+      min-height: 2.75rem;
+      min-width: 2.75rem;
+      align-items: center;
+    }
+    #mobile-nav .nav-link {
+      min-height: 2.75rem;
+      padding-block: 0.625rem;
+    }
+    /* Vertical padding on an inline link enlarges the tap area without moving any text. */
+    a[href^='mailto:'] {
+      padding-block: 0.9375rem;
+    }
+  }
+}
+
+/* Honour the system "reduce motion" setting for any remaining transitions. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

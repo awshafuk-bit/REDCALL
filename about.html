@@ -13,17 +13,22 @@
       name="description"
       content="Valmere Group builds safety and coordination systems for workplaces. Book a short RedCall walkthrough for your organisation."
     />
-    <link rel="canonical" href="https://redcall.com.au/about.html" />
+    <link rel="canonical" href="https://redcall.com.au/about" />
     <meta name="theme-color" content="#000000" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="RedCall" />
     <meta property="og:locale" content="en_AU" />
-    <meta property="og:url" content="https://redcall.com.au/about.html" />
+    <meta property="og:url" content="https://redcall.com.au/about" />
     <meta property="og:title" content="About Us | RedCall" />
     <meta property="og:description" content="Valmere Group builds safety and coordination systems for workplaces. Book a short RedCall walkthrough for your organisation." />
-    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="About Us | RedCall" />
     <meta name="twitter:description" content="Valmere Group builds safety and coordination systems for workplaces. Book a short RedCall walkthrough for your organisation." />
+    <meta property="og:image" content="https://redcall.com.au/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RedCall: Workplace Emergency Alerts &amp; Response Coordination" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://redcall.com.au/og-image.png" />
     <title>About Us | RedCall</title>
     <link rel="stylesheet" href="/src/index.css" />
   </head>
@@ -31,16 +36,16 @@
     <a href="#main" class="skip-link">Skip to main content</a>
 
     <!-- One light for the whole page, behind every section. -->
-    <div data-shader-bg class="page-light" aria-hidden="true"></div>
+    <div class="page-light" aria-hidden="true"></div>
     <div class="page-light-vignette" aria-hidden="true"></div>
 
     <header class="glass-header sticky top-0 z-40">
       <div class="container-page flex items-center justify-between py-6">
         <a
           href="/"
-          class="flex items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
+          class="flex min-h-11 items-center gap-3 text-2xl font-semibold tracking-wide text-[var(--color-ink)]"
         >
-          <img src="favicon.svg" alt="RedCall" width="32" height="32" />
+          <img src="favicon.svg" alt="" width="32" height="32" />
           RedCall
         </a>
         <nav aria-label="Primary" class="hidden items-center gap-6 lg:flex xl:gap-10">
@@ -76,7 +81,7 @@
         aria-label="Mobile"
         class="border-t border-white/10 px-6 py-4 data-[open=false]:hidden lg:hidden"
       >
-        <ul class="flex flex-col gap-4">
+        <ul class="flex flex-col gap-2">
           <li><a href="/" class="nav-link block py-1.5">Home</a></li>
           <li><a href="/how-it-works" class="nav-link block py-1.5">How It Works</a></li>
           <li><a href="/about" class="nav-link block py-1.5" aria-current="page">About Us</a></li>
@@ -253,7 +258,7 @@
                 <p class="text-sm leading-relaxed text-[var(--color-ink-soft)]">
                   By submitting this form you agree to RedCall using your details to reply to your
                   request, as described in our
-                  <a href="privacy.html" class="underline hover:text-[var(--color-ink)]"
+                  <a href="/privacy" class="underline hover:text-[var(--color-ink)]"
                     >Privacy Policy</a
                   >.
                 </p>
@@ -280,19 +285,19 @@
       <div class="container-page py-16">
         <a
           href="/"
-          class="inline-flex items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
+          class="inline-flex min-h-11 items-center gap-4 text-3xl font-semibold tracking-wide text-[var(--color-ink)] sm:text-4xl"
         >
-          <img src="favicon.svg" alt="RedCall" width="34" height="34" />
+          <img src="favicon.svg" alt="" width="34" height="34" />
           RedCall
         </a>
 
-        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3">
+        <ul class="mt-8 flex flex-wrap gap-x-10 gap-y-3 max-lg:gap-y-0">
           <li><a href="/how-it-works" class="footer-link">How It Works</a></li>
           <li><a href="/faq" class="footer-link">FAQ</a></li>
           <li><a href="/security" class="footer-link">Security</a></li>
-          <li><a href="privacy.html" class="footer-link">Privacy</a></li>
-          <li><a href="support.html" class="footer-link">Support</a></li>
-          <li><a href="terms.html" class="footer-link">Terms</a></li>
+          <li><a href="/privacy" class="footer-link">Privacy</a></li>
+          <li><a href="/support" class="footer-link">Support</a></li>
+          <li><a href="/terms" class="footer-link">Terms</a></li>
         </ul>
 
         <div
