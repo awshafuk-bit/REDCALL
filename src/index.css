@@ -175,19 +175,40 @@ summary:focus-visible {
     @apply mb-1 block text-sm font-semibold text-[var(--color-ink)];
   }
   .field-hint {
-    @apply mb-2 text-xs text-[var(--color-ink-soft)];
+    @apply mb-2 text-sm text-[var(--color-ink-soft)];
   }
   /* text-base (16px) is deliberate: iOS Safari zooms the whole page in when a focused
      field is under 16px. Keeping it at 16px stops that without disabling pinch-zoom. */
   .field-input {
     @apply w-full rounded-lg px-4 py-3 text-base text-[var(--color-ink)] transition-colors duration-200 placeholder:text-[var(--color-ink-soft)];
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
   .field-input:hover {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.65);
+  }
+  .field-input:focus {
+    border-color: var(--color-brand-text);
+  }
+
+  /* Below the desktop breakpoint, give links a tap target of at least 44px. */
+  @media (max-width: 1023px) {
+    .footer-link {
+      display: inline-flex;
+      min-height: 2.75rem;
+      min-width: 2.75rem;
+      align-items: center;
+    }
+    #mobile-nav .nav-link {
+      min-height: 2.75rem;
+      padding-block: 0.625rem;
+    }
+    /* Vertical padding on an inline link enlarges the tap area without moving any text. */
+    a[href^='mailto:'] {
+      padding-block: 0.9375rem;
+    }
   }
 }
 
